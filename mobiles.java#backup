@@ -1,0 +1,483 @@
+import java .io.*;
+class mobiles
+{ 
+    static int sum;
+    static void meth()throws Exception
+    {
+        welcome w=new welcome();
+        mobiles A=new mobiles();
+        System.out.println("you have chosen mobiles");
+        System.out.println("a wide range of mobiles are available which belong to the top brands such as samsung,nokia,apple micromax,sony etc");
+        System.out.println("in our store we have 7 types of mobiles,those are:-");
+        System.out.println("1] samsung galaxy note");
+        System.out.println("2] nokia lumia 925");
+        System.out.println("3] apple iphone5");
+        System.out.println("4] sony xperia Z");
+        System.out.println("5] micromax canvas");
+        System.out.println("6] samsung galaxy s4");
+        System.out.println("7] nokia lumia 1020,our latest edition");
+        System.out.println("                                      ");
+        System.out.println("which one would you like to buy");
+        BufferedReader mr=new BufferedReader(new InputStreamReader(System.in));
+        int m=Integer.parseInt(mr.readLine());
+        if(m==1)
+        {
+            System.out.println("you have chosen samsung galaxy note,good choice");
+            System.out.println("the price is=32,000");
+            System.out.println("would you like to buy(yes/no)");
+            String a1="yes";
+            String a2="no";
+            BufferedReader ar=new BufferedReader(new InputStreamReader(System.in));
+            String a=ar.readLine();
+            if(a.equals(a1))
+            {
+                System.out.println("the product has been added to the shopping cart");
+                sum=sum+32000;
+                System.out.println("would you like to go to the shopkart(yes/no)");
+                BufferedReader br2=new BufferedReader(new InputStreamReader(System.in));
+                String A2=br2.readLine();
+                if(A2.equals(a1))
+                { 
+                    shoplistm S=new shoplistm();
+                    S.meth();
+                    System.out.println("******************************************************");
+                    System.out.println("******************************************************");
+                    Thread.sleep(3000);
+                    System.out.println("would you like to continue shopping(yes/no)");
+                    BufferedReader br1=new BufferedReader(new InputStreamReader(System.in));
+                    String A1=br1.readLine();
+                    if(A1.equals(a1))
+                    {
+                        list L=new list();
+                        L.meth();
+
+                    }
+                    if(A1.equals(a2))
+                    { 
+                        String b="yes";
+                        String b1="no";
+                        System.out.println("would you like to go to the main homepage(yes/no)");
+                        BufferedReader cr2=new BufferedReader(new InputStreamReader(System.in));String C2=cr2.readLine();
+                        if(C2.equals(b))
+                        { 
+                            w.wel();
+                        }
+
+                    }
+                }
+            }
+            if(a.equals(a2))
+            {
+                list L=new list();
+                L.meth();
+            }
+            else
+            {
+                System.out.println("wrong option");
+                String b="yes";
+                String b1="no";
+                System.out.println("would you like to go to continue shopping(yes/no)");
+                BufferedReader cr2=new BufferedReader(new InputStreamReader(System.in));String C2=cr2.readLine();
+                if(C2.equals(b))
+                { 
+                    w.wel();
+                }
+
+            }
+        }
+
+        if(m==2)
+        {
+            System.out.println("you have chosen nokia lumia 925,classy");
+            System.out.println("the price is=29,950");
+            System.out.println("would you like to buy");
+            String c1="yes";
+            String c2="no";
+            BufferedReader cr=new BufferedReader(new InputStreamReader(System.in));
+            String c=cr.readLine();
+            if(c.equals(c1))
+            {
+                System.out.println("the product has been added to the shopping cart");
+                sum=sum+29950;
+                System.out.println("would you like to go to the shopkart(yes/no)");
+                BufferedReader br2=new BufferedReader(new InputStreamReader(System.in));
+                String A2=br2.readLine();
+                if(A2.equals(c1))
+                { 
+                    shoplistm S=new shoplistm();
+                    S.meth();
+                    System.out.println("******************************************************");
+                    System.out.println("******************************************************");
+                    Thread.sleep(3000);
+                    System.out.println("would you like to continue shopping(yes/no)");
+                    BufferedReader br1=new BufferedReader(new InputStreamReader(System.in));
+                    String A1=br1.readLine();
+                    if(A1.equals(c1))
+                    {
+                        list L=new list();
+                        L.meth();
+
+                    }
+                    if(A1.equals(c2))
+                    { 
+                        String b="yes";
+                        String b1="no";
+                        System.out.println("would you like to go to the main homepage(yes/no)");
+                        BufferedReader cr2=new BufferedReader(new InputStreamReader(System.in));String C2=cr2.readLine();
+                        if(C2.equals(b))
+                        { 
+                            w.wel();
+                        }
+
+                    }
+                }
+            }
+            if(c.equals(c2))
+            {
+                list L=new list();
+                L.meth();
+            }
+            else
+            {
+                System.out.println("wrong option");
+                String b="yes";
+                String b1="no";
+                System.out.println("would you like to go to continue shopping(yes/no)");
+                BufferedReader cr2=new BufferedReader(new InputStreamReader(System.in));String C2=cr2.readLine();
+                if(C2.equals(b))
+                { 
+                    w.wel();
+                }
+
+            }
+        }
+
+        if(m==3)
+        {
+            System.out.println("you have chosen apple iphone 5,excellent choice");
+            sum=sum+26760;
+            System.out.println("the price is=26,760");
+            System.out.println("would you like to buy");
+            String d1="yes";
+            String d2="no";
+            BufferedReader dr=new BufferedReader(new InputStreamReader(System.in));
+            String d=dr.readLine();
+            if(d.equals(d1))
+            {
+                System.out.println("the product has been added to the shopping cart");
+                sum=sum+26760;
+                System.out.println("would you like to go to the shopkart(yes/no)");
+                BufferedReader br2=new BufferedReader(new InputStreamReader(System.in));
+                String A2=br2.readLine();
+                if(A2.equals(d1))
+                { 
+                    shoplistm S=new shoplistm();
+                    S.meth();
+                    System.out.println("******************************************************");
+                    System.out.println("******************************************************");
+                    Thread.sleep(3000);
+                    System.out.println("would you like to continue shopping(yes/no)");
+                    BufferedReader br1=new BufferedReader(new InputStreamReader(System.in));
+                    String A1=br1.readLine();
+                    if(A1.equals(d1))
+                    {
+                        list L=new list();
+                        L.meth();
+
+                    }
+                    if(A1.equals(d2))
+                    { 
+                        String b="yes";
+                        String b1="no";
+                        System.out.println("would you like to go to the main homepage(yes/no)");
+                        BufferedReader cr2=new BufferedReader(new InputStreamReader(System.in));String C2=cr2.readLine();
+                        if(C2.equals(b))
+                        { 
+                            w.wel();
+                        }
+
+                    }
+                }
+            }
+            if(d.equals(d2))
+            {
+                list L=new list();
+                L.meth();
+            }
+            else
+            {
+                System.out.println("wrong option");
+                String b="yes";
+                String b1="no";
+                System.out.println("would you like to go to continue shopping(yes/no)");
+                BufferedReader cr2=new BufferedReader(new InputStreamReader(System.in));String C2=cr2.readLine();
+                if(C2.equals(b))
+                { 
+                    w.wel();
+                }
+
+            }
+        }
+
+        if(m==4)
+        {
+            System.out.println("you have chosen sony xperia z ,an highly efficient phone");
+            System.out.println("the price is=33,000");
+            System.out.println("would you like to buy");
+            String e1="yes";
+            String e2="no";
+            BufferedReader er=new BufferedReader(new InputStreamReader(System.in));
+            String e=er.readLine();
+            if(e.equals(e1))
+            {
+                System.out.println("the product has been added to the shopping cart");
+                sum=sum+33000;
+                System.out.println("would you like to go to the shopkart(yes/no)");
+                BufferedReader br2=new BufferedReader(new InputStreamReader(System.in));
+                String A2=br2.readLine();
+                if(A2.equals(e1))
+                { 
+                    shoplistm S=new shoplistm();
+                    S.meth();
+                    System.out.println("******************************************************");
+                    System.out.println("******************************************************");
+                    Thread.sleep(3000);
+                    System.out.println("would you like to continue shopping(yes/no)");
+                    BufferedReader br1=new BufferedReader(new InputStreamReader(System.in));
+                    String A1=br1.readLine();
+                    if(A1.equals(e1))
+                    {
+                        list L=new list();
+                        L.meth();
+
+                    }
+                    if(A1.equals(e2))
+                    { 
+                        String b="yes";
+                        String b1="no";
+                        System.out.println("would you like to go to the main homepage(yes/no)");
+                        BufferedReader cr2=new BufferedReader(new InputStreamReader(System.in));String C2=cr2.readLine();
+                        if(C2.equals(b))
+                        { 
+                            w.wel();
+                        }
+
+                    }
+                }
+            }
+            if(e.equals(e2))
+            {
+                list L=new list();
+                L.meth();
+            }
+            else
+            {
+                System.out.println("wrong option");
+                String b="yes";
+                String b1="no";
+                System.out.println("would you like to go to continue shopping(yes/no)");
+                BufferedReader cr2=new BufferedReader(new InputStreamReader(System.in));String C2=cr2.readLine();
+                if(C2.equals(b))
+                { 
+                    w.wel();
+                }
+
+            }
+        }
+        if(m==5)
+        {System.out.println("you have chosen micromax canvas ,not a bad choice");
+            System.out.println("the price is=22,000");
+            System.out.println("would you like to buy");
+            String f1="yes";
+            String f2="no";
+            BufferedReader fr=new BufferedReader(new InputStreamReader(System.in));
+            String f=fr.readLine();
+            if(f.equals(f1))
+            {
+                System.out.println("the product has been added to the shopping cart");
+                sum=sum+22000;
+                System.out.println("would you like to go to the shopkart(yes/no)");
+                BufferedReader br2=new BufferedReader(new InputStreamReader(System.in));
+                String A2=br2.readLine();
+                if(A2.equals(f1))
+                { 
+                    shoplistm S=new shoplistm();
+                    S.meth();
+                    System.out.println("******************************************************");
+                    System.out.println("******************************************************");
+                    Thread.sleep(3000);
+                    System.out.println("would you like to continue shopping(yes/no)");
+                    BufferedReader br1=new BufferedReader(new InputStreamReader(System.in));
+                    String A1=br1.readLine();
+                    if(A1.equals(f1))
+                    {
+                        list L=new list();
+                        L.meth();
+
+                    }
+                    if(A1.equals(f2))
+                    { 
+                        String b="yes";
+                        String b1="no";
+                        System.out.println("would you like to go to the main homepage(yes/no)");
+                        BufferedReader cr2=new BufferedReader(new InputStreamReader(System.in));String C2=cr2.readLine();
+                        if(C2.equals(b))
+                        { 
+                            w.wel();
+                        }
+
+                    }
+                }
+            }
+            if(f.equals(f2))
+            {
+                list L=new list();
+                L.meth();
+            }
+            else
+            {
+                System.out.println("wrong option");
+                String b="yes";
+                String b1="no";
+                System.out.println("would you like to go to continue shopping(yes/no)");
+                BufferedReader cr2=new BufferedReader(new InputStreamReader(System.in));String C2=cr2.readLine();
+                if(C2.equals(b))
+                { 
+                    w.wel();
+                }
+
+            }
+        }
+        if(m==6)
+        {System.out.println("you have chosen samsung galaxy s4,an allrounder");
+            System.out.println("the price is=37,000");
+            System.out.println("would you like to buy");
+            String g1="yes";
+            String g2="no";
+            BufferedReader gr=new BufferedReader(new InputStreamReader(System.in));
+            String g=gr.readLine();
+            if(g.equals(g1))
+            {
+                System.out.println("the product has been added to the shopping cart");
+                sum=sum+37000;
+                System.out.println("would you like to go to the shopkart(yes/no)");
+                BufferedReader br2=new BufferedReader(new InputStreamReader(System.in));
+                String A2=br2.readLine();
+                if(A2.equals(g1))
+                { 
+                    shoplistm S=new shoplistm();
+                    S.meth();
+                    System.out.println("******************************************************");
+                    System.out.println("******************************************************");
+                    Thread.sleep(3000);
+                    System.out.println("would you like to continue shopping(yes/no)");
+                    BufferedReader br1=new BufferedReader(new InputStreamReader(System.in));
+                    String A1=br1.readLine();
+                    if(A1.equals(g1))
+                    {
+                        list L=new list();
+                        L.meth();
+
+                    }
+                    if(A1.equals(g2))
+                    { 
+                        String b="yes";
+                        String b1="no";
+                        System.out.println("would you like to go to the main homepage(yes/no)");
+                        BufferedReader cr2=new BufferedReader(new InputStreamReader(System.in));String C2=cr2.readLine();
+                        if(C2.equals(b))
+                        { 
+                            w.wel();
+                        }
+
+                    }
+                }
+            }
+            if(g.equals(g2))
+            {
+                list L=new list();
+                L.meth();
+            }
+            else
+            {
+                System.out.println("wrong option");
+                String b="yes";
+                String b1="no";
+                System.out.println("would you like to go to continue shopping(yes/no)");
+                BufferedReader cr2=new BufferedReader(new InputStreamReader(System.in));String C2=cr2.readLine();
+                if(C2.equals(b))
+                { 
+                    w.wel();
+                }
+
+            }
+        }
+        if(m==7)
+        {System.out.println("you have chosen nokia lumia 1020 ,an impeccable mobile");
+            System.out.println("the price is=44,000");
+            System.out.println("would you like to buy");
+            String h1="yes";
+            String h2="no";
+            BufferedReader hr=new BufferedReader(new InputStreamReader(System.in));
+            String h=hr.readLine();
+            if(h.equals(h1))
+            {
+                System.out.println("the product has been added to the shopping cart");
+                sum=sum+44000;
+                System.out.println("would you like to go to the shopkart(yes/no)");
+                BufferedReader br2=new BufferedReader(new InputStreamReader(System.in));
+                String A2=br2.readLine();
+                if(A2.equals(h1))
+                { 
+                    shoplistm S=new shoplistm();
+                    S.meth();
+                    System.out.println("******************************************************");
+                    System.out.println("******************************************************");
+                    Thread.sleep(3000);
+                    System.out.println("would you like to continue shopping(yes/no)");
+                    BufferedReader br1=new BufferedReader(new InputStreamReader(System.in));
+                    String A1=br1.readLine();
+                    if(A1.equals(h1))
+                    {
+                        list L=new list();
+                        L.meth();
+
+                    }
+                    if(A1.equals(h2))
+                    { 
+                        String b="yes";
+                        String b1="no";
+                        System.out.println("would you like to go to the main homepage(yes/no)");
+                        BufferedReader cr2=new BufferedReader(new InputStreamReader(System.in));String C2=cr2.readLine();
+                        if(C2.equals(b))
+                        { 
+                            w.wel();
+                        }
+
+                    }
+                }
+            }
+            if(h.equals(h2))
+            {
+                list L=new list();
+                L.meth();
+            }
+            else
+            {
+                System.out.println("wrong option");
+                String b="yes";
+                String b1="no";
+                System.out.println("would you like to go to continue shopping(yes/no)");
+                BufferedReader cr2=new BufferedReader(new InputStreamReader(System.in));String C2=cr2.readLine();
+                if(C2.equals(b))
+                { 
+                    w.wel();
+                }
+
+            }
+        }
+
+    }
+
+}
+
